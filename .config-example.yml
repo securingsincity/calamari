@@ -1,0 +1,11 @@
+github:
+  host: api.github.com
+  pathPrefix: ''
+  access_token: access-token
+repos:
+  - {username: 'username', repo: 'repo-name'}
+  - {username: 'username', repo: 'repo-name'}
+  - {username: 'username', repo: 'repo-name'}
+  - {username: 'username', repo: 'repo-name'}
+  - {username: 'username', repo: 'repo-name'}
+  - {username: 'username', repo: 'repo-name'}
