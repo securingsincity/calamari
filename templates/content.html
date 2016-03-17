@@ -1,0 +1,63 @@
+<p><strong>{{repo}}</strong></p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <div class="tablesorter-header-inner">
+                    <div class="tablesorter-header-inner">
+                        <div class="tablesorter-header-inner">
+                            <p>JIRA Ticket</p>
+                        </div>
+                    </div>
+                </div>
+            </th>
+            <th colspan="1">
+                <div class="tablesorter-header-inner"><strong>Release Day</strong></div>
+            </th>
+            <th>
+                <div class="tablesorter-header-inner">
+                    <div class="tablesorter-header-inner">
+                        <div class="tablesorter-header-inner">Regression</div>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="tablesorter-header-inner">
+                    <div class="tablesorter-header-inner">
+                        <div class="tablesorter-header-inner">Regression Done By</div>
+                    </div>
+                </div>
+            </th>
+            <th colspan="1">
+                <div class="tablesorter-header-inner">Notes</div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each issues}}
+        <tr>
+            <td>
+                <p>
+                    <ac:structured-macro ac:name="jira" ac:schema-version="1" >
+                       <ac:parameter ac:name="columns">type,key,summary,status</ac:parameter>
+                        <ac:parameter ac:name="key">{{this.id}}</ac:parameter>
+                    </ac:structured-macro>
+                </p>
+            </td>
+            <td colspan="1">{{this.date}}</td>
+            <td>
+                <ac:task-list>
+                    <ac:task>
+                        <ac:task-id>41</ac:task-id>
+                        <ac:task-status>incomplete</ac:task-status>
+                        <ac:task-body><span>&nbsp;</span></ac:task-body>
+                    </ac:task>
+                </ac:task-list>
+            </td>
+            <td></td>
+            <td colspan="1">&nbsp;</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<p></p>

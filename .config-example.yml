@@ -1,3 +1,13 @@
+atlassian:
+  confluenceUrl:  https://user.atlassian.net/wiki
+  jiraUrl:  https://user.atlassian.net/
+  username: james
+  password: 'password'
+  spaceKey: Deployment
+    projects:
+    - TEST
+    - PROJ
+    - NEAT
 github:
   host: api.github.com
   pathPrefix: ''

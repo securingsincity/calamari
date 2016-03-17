@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.3.4"
+    "bluebird": "^3.3.4",
+    "chalk": "^1.1.1",
+    "confluence-api": "^1.0.2",
+    "github": "^0.2.4",
+    "handlebars": "^4.0.5",
+    "js-yaml": "^3.5.4",
+    "lodash": "^4.6.1",
+    "moment": "^2.12.0"
   }
 }
