@@ -78,15 +78,15 @@ milestones.getReposWithActiveMilestones(github, config.repos)
   })
   .then(function(issuesByRepo) {
     var formattedDisplay = _.map(issuesByRepo, function(issues, repoName) {
+
       var data = transformIssuesForHandlebars(issues, repoName);
-      return data;
+      // return data;
       return template(data);
 
     });
-    // console.log(util.inspect(formattedDisplay, false, null));
     var formattedDisplayString = formattedDisplay.join("");
 
-    confluence.postContent(config.atlassian.spaceKey, moment().format("MMDDYYYY") + " Release Notes - DRAFT", formattedDisplayString, null, function(err, data) {
+    confluence.postContent(config.atlassian.spaceKey, moment().format("MMDDYYYY") + " Deployment Notes - DRAFT", formattedDisplayString, null, function(err, data) {
       if (err) {
         console.log(err)
         return;
